@@ -29,9 +29,8 @@ then
 fi
  echo "installing mtproto proxy server..."
  git clone -b stable https://github.com/alexbers/mtprotoproxy
- mv mtprotoproxy proxy
  echo "done! now run this command:"
- echo "cd proxy && tmux new -s proxy and then python3.7 proxy.py"
+ echo "cd mtprotoproxy && tmux new -s proxy and then python3.7 mtprotoproxy.py"
 elif [ "$ANS" == "n" ];then
 read -p "do you want to install bot requierments? [y/n]" ANS
 if [ "$ANS" == "y" ];then
